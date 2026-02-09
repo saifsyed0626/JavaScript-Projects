@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Function Demo</title>
+</head>
+<body>
+
+  <h1>Greeting App</h1>
+
+  <input type="text" id="nameInput" placeholder="Saif">
+
+  <button onclick="greetUser()">Greet Me</button>
+
+  <p id="output"></p>
+
+  <script>
+    function greetUser() {
+      const name = document.getElementById("nameInput").value;
+      document.getElementById("output").textContent =
+        `Hello, ${name}! Welcome to JavaScript.`;
+    }
+  </script>
+
+</body>
+</html>
