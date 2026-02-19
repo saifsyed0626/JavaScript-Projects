@@ -38,7 +38,7 @@ function constant_function() {
 }
 
 
-var X = 82;
+var X = 82
 document.write(X); 
 {
     let X = 33;
