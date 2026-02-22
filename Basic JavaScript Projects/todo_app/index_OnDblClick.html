@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ondblclick Event Example</title>
+    <style>
+        p {
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Double Click Challenge</h1>
+
+    <!-- Paragraph with ondblclick event -->
+    <p ondblclick="changeColor()" id="myParagraph">
+        Double-click this paragraph to change its color!
+    </p>
+
+    <script>
+        // Function called when paragraph is double-clicked
+        function changeColor() {
+            var p = document.getElementById('myParagraph');
+            // Random color generator
+            var colors = ["red", "blue", "green", "orange", "purple", "brown"];
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            p.style.color = randomColor;
+        }
+    </script>
+
+</body>
+</html>
