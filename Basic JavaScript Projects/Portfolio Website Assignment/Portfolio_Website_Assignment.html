@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="CSS/Portfolio_Website.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#Home" class="active">Home</a>
+        <a href="#Projects">Projects</a>
+        <a href="#About">About</a>
+        <a onclick="openForm()" class="contact">Contact</a>
+    </nav>
+
+    <!-- Typing Section with Video -->
+    <section id="Home" class="Typing-section">
+        <video autoplay muted loop class="Typing-video">
+            <source src="./images/Videos/Typing.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="Typing-overlay">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a full-stack developer creating innovative web applications.</p>
+        </div>
+    </section>
+
+    <!-- Slideshow Section -->
+    <section id="Projects" class="slideshow-section">
+        <div class="slideshow-container">
+            <!-- Slide 1 -->
+            <div class="mySlide fade">
+                <img src="./images/python.png" alt="Project python">
+                <div class="slide-text">Project 1: Web App</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="mySlide fade">
+                <img src="./images/C_Sharp_and_Dot_Net.png" alt="Project C Sharp and Dot Net">
+                <div class="slide-text">Project 2: Mobile App</div>
+            </div>
+            <!-- Navigation -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="About" class="about-section">
+        <div class="about-image">
+            <img src="./images/GitHub.png" alt="About Me">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello! I am a software developer who loves to code! As a father of three, I enjoy time with my family and traveling. 
+                I am a passionate developer with experience in HTML, CSS, JavaScript, Python, and more. 
+                I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. .</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Popup -->
+    <div class="form-popup" id="contactForm">
+        <form action="" method="POST" class="form-container">
+            <h2>Contact Me</h2>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="message" placeholder="Message" required>
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Saif Syed | Built with ❤️</p>
+    </footer>
+
+    <script src="JS/Portfolio_Website.js"></script>
+</body>
+</html>
